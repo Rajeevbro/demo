@@ -18,7 +18,7 @@ public class ConnectionCheckController {
 
         ResponseMessage responseMessage = ResponseMessage.builder()
                 .responseMessage("Connection successful!")
-                .volatileFieldMessage("This Field is subject to change to show the workflow of tekton CICID")
+                .volatileFieldMessage("This Field is subject to change to show the workflow of tekton CICID ")
                 .build();
 
         return new  ResponseEntity<>(responseMessage, HttpStatus.OK);
