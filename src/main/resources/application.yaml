@@ -4,3 +4,6 @@ spring:
 
 server:
   port: 8085
+
+
+  #docker run -p 8085:8085 --name cicdapp rchapagain/cicdapp:dev
