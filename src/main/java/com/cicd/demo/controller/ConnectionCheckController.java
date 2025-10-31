@@ -18,7 +18,7 @@ public class ConnectionCheckController {
 
         ResponseMessage responseMessage = ResponseMessage.builder()
                 .responseMessage("Connection successful!")
-                .volatileFieldMessage("This is dev environment updated for check !!")
+                .volatileFieldMessage("This is dev environment updated for check ok !!")
                 .build();
 
         return new  ResponseEntity<>(responseMessage, HttpStatus.OK);
