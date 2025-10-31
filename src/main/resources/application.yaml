@@ -5,5 +5,20 @@ spring:
 server:
   port: 8085
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true     # enables /actuator/health/liveness and /actuator/health/readiness
 
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
   #docker run -p 8085:8085 --name cicdapp rchapagain/cicdapp:dev
+  #docker pull rchapagain/cicdapp:dev
