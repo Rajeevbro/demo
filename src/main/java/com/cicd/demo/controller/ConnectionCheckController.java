@@ -18,7 +18,7 @@ public class ConnectionCheckController {
 
         ResponseMessage responseMessage = ResponseMessage.builder()
                 .responseMessage("Connection successful!")
-                .volatileFieldMessage("This is the message which will be changed to check the pipeline !!")
+                .volatileFieldMessage("This is the message which will be changed to check the pipeline and this is check numnber 2!!")
                 .build();
 
         return new  ResponseEntity<>(responseMessage, HttpStatus.OK);
